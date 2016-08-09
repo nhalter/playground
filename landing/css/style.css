@@ -116,6 +116,7 @@ header {
 	min-height: 100vh;
 	color: #fff;
   padding-top: 35%;
+  padding-left: 6%;
 }
 
 .hero-copy {
@@ -169,6 +170,7 @@ header {
 	color: #1D181F;
 	letter-spacing: 0px;
 	letter-spacing: -2px;
+  margin-bottom: 10%;
 }
 .hero p {
 	font-family: ProximaNova-Regular;
@@ -208,5 +210,4 @@ letter-spacing: 0px;
 		background-color: #000;
 		padding: 20px;
 		color: #fff;
-		position: fixed;
 }
