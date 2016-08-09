@@ -1,0 +1,94 @@
+/* Main Site Navigation */
+
+.nav {
+	width: 1170px;
+	margin:0 auto;
+	padding: 60px;
+}
+
+.nav li {
+	font-family: ProximaNova-Bold;
+	font-size: 13px;
+	color: #FFFFFF;
+	letter-spacing: 1.73px;
+	display:inline;
+	text-transform: uppercase;
+	padding-right: 30px;
+}
+
+.nav li a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.nav li a:hover {
+	text-decoration: underline;
+}
+
+
+/* Hero area */
+
+#container {
+	background: url(img/hero-bg.png);
+	background-size: cover;
+	height: auto;
+	width:100%;
+}
+
+#hero {
+	width: 1170px;
+	margin:0 auto;
+	padding: 40px 0 100px 0;
+}
+
+.hero-copy {
+	float:left;
+}
+
+#hero aside{
+    display: block;
+    background: url(img/unyq-hero.png);
+    width: 30%;
+    float: right;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    padding-top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+#hero h1 {
+	font-family: ProximaNova-Extrabld;
+	font-size: 92px;
+	color: #FFFFFF;
+	letter-spacing: -2px;
+	line-height: 92px;
+	width: 643px;
+	padding-bottom: 40px;
+}
+#hero p {
+	font-family: ProximaNova-Regular;
+	font-size: 24px;
+	color: #FFFFFF;
+	width: 567px;
+	padding-bottom: 20px;
+}
+
+/* Startups.co About Section*/
+
+#sco-about {
+	height:1000px;
+	background-color:#F7F6F1;
+}
+
+#sco-about h1 {
+	/* The Startups.co Plat: */
+	font-family: ProximaNova-Regular;
+	font-size: 32px;
+	color: #1D181F;
+	text-align:center;
+	padding-top:70px;
+}
