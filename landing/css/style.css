@@ -40,8 +40,7 @@ input[type=text]  {
 -------------*/
 
 
-header {
-  position: absolute;
+nav {
   top: 0;
   left: 0;
   z-index: 10;
@@ -50,6 +49,18 @@ header {
   justify-content: space-between;
   align-items: center;
   color: #fff;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.main {
+  bottom: 0;
+    height: auto;
+    left: 0;
+    padding-top: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 
@@ -103,24 +114,15 @@ header {
     padding: 0;
 }*/
 
-.phone {
-	float:left;
-}
-
 
 .hero{
-	background: rgba(209, 241, 255, 0.72);
-	background-image: linear-gradient(270deg, rgba(247,246,241,0.00) 27%, #F7F6F1 66%);
-	position: relative;
-	justify-content: center;
-	min-height: 100vh;
-	color: #fff;
-  padding-top: 35%;
-  padding-left: 6%;
+height: 830px;
+padding-bottom: 0;
+    padding-left: 20px;
 }
 
-.hero-copy {
-	float:left;
+body {
+  background-color:#F7F6F1;
 }
 
 .hero-header {
@@ -129,6 +131,13 @@ header {
 	font-size: 48px;
 	color: #1D181F;
 	letter-spacing: 0px;
+}
+
+@media (min-width: 1024px) {
+.hero-header {
+    visibility: visible;
+    float:right;
+  }
 }
 
 .banner {
@@ -141,27 +150,8 @@ header {
     float: right;
 }
 
-.hero .background-image{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-size: cover;
-	background-color: #2196F3;
-	z-index: -1;
-}
 
-.hero .background-image:after{
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: #414a4f;
-	opacity: 0.75;
-}
+
 
 .hero h1 {
 	/* Startups Daily is th: */
@@ -171,6 +161,7 @@ header {
 	letter-spacing: 0px;
 	letter-spacing: -2px;
   margin-bottom: 10%;
+  padding-top: 10%;
 }
 .hero p {
 	font-family: ProximaNova-Regular;
@@ -195,7 +186,19 @@ color: #1D181F;
 letter-spacing: 0px;
 }
 
+.phone {
+  visibility: hidden;
+}
+@media (min-width: 1024px) {
+.phone {
+    visibility: visible;
+    float:right;
+  }
+}
 
+.phone img {
+  float:right;
+}
 
 /*-------------
  	Footer
@@ -207,7 +210,6 @@ letter-spacing: 0px;
     right: 0;
     bottom: 0px;
     left: 0;
-		background-color: #000;
 		padding: 20px;
 		color: #fff;
 }
