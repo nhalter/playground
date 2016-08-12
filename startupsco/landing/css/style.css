@@ -5,6 +5,12 @@
 @import url("responsive.gs.12col.css");
 
 
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 480px) {
+
+}
+
 /*-------------
  	General
 -------------*/
@@ -17,13 +23,9 @@
 
 
 
-input[type=text]  {
-	/* Rectangle 370: */
-	height: 65px;
-	width: 80%;
-	background: #FFFFFF;
-	box-shadow: 0px 0px 15px 0px rgba(58,65,76,0.30);
-	border:none;
+
+input, label {
+    display:block;
 }
 
 .left {
@@ -49,18 +51,23 @@ nav {
   justify-content: space-between;
   align-items: center;
   color: #fff;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+@media only screen and (max-width: 480px) {
+	nav {
+		margin-bottom: 0;
+		margin-top: 30px;
+	}
+}
+.main {
+	margin-top: 50px;
 }
 
-.main {
-  bottom: 0;
-    height: auto;
-    left: 0;
-    padding-top: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
+@media only screen and (max-width: 480px) {
+	.main {
+		margin-top:0;
+	}
 }
 
 
@@ -97,31 +104,45 @@ nav {
  	Hero Section
 ----------------*/
 
-
-
-/*.container {
+.container {
   max-width: 1140px;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 0.938rem;
-	padding-right: 0.938rem;
-}*/
 
-/*.center-vertically {
-    display: table;
-    width: 100%;
-    height: 100%;
-    padding: 0;
-}*/
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
 
 
 .hero{
 padding-bottom: 0;
-padding-left: 20px;
+/*border: 1px solid red;*/
 }
+
+/*.hero:after {
+	content: ' ';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	opacity: 0.02;
+	background-image: url('../img/feature-img.svg');
+	background-repeat: no-repeat;
+	background-position: 50% 0;
+	-ms-background-size: cover;
+	-o-background-size: cover;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+}*/
 
 body {
   background-color:#F7F6F1;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .hero-header {
@@ -144,63 +165,91 @@ body {
 	background-image: linear-gradient(90deg, rgba(247,246,241,0.00) 27%, #F7F6F1 66%);
 }
 
-.hero aside{
-    display: block;
-    float: right;
+
+.hero-copy article {
+	margin: 0 auto;
 }
 
+.content {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+}
 
+.mid-p {
+	padding-right: 30%;
+}
 
+@media only screen and (max-width: 480px) {
+	.mid-p {
+		padding-right: 0;
+	}
+}
 
 .hero h1 {
-	/* Startups Daily is th: */
-	font-family: "ProximaNova-Bold", sans-serif;
-	font-size: 48px;
+	font-family: "ProximaNova-Extrabld", sans-serif;
+	font-size: 6em;
 	color: #1D181F;
 	letter-spacing: 0px;
 	letter-spacing: -2px;
-  margin-bottom: 10%;
-  padding-top: 10%;
-  padding-right: 10%;
-}
-.hero p {
-	font-family: "ProximaNova-Regular", sans-serif;
-	font-size: 24px;
-	color: #FFFFFF;
-	width: 80%;
-	padding-bottom: 20px;
+	vertical-align: middle;
 }
 
-hr {
-	/* Line: */
-opacity: 0.35;
-border: 1px solid #979797;
-margin: 50px 0 50px 0;
+@media only screen and (max-width: 480px) {
+	.hero h1 {
+		font-size: 3em;
+	}
 }
 
 .hero h2 {
-	/* Need a preview? Chec: */
-font-family: "ProximaNova-Regular", sans-serif;
-font-size: 20px;
-color: #1D181F;
-letter-spacing: 0px;
+	font-family: ProximaNova-Light;
+	font-size: 4em;
+	color: rgba(29,24,31,0.80);
+	letter-spacing: -2px;
+	padding-top: 40px;
 }
 
-.phone {
-  visibility: hidden;
-  height:0;
-}
-@media (min-width: 1024px) {
-.phone {
-    visibility: visible;
-    float:right;
-    height: 100%;
-  }
+@media only screen and (max-width: 480px) {
+	.hero h2 {
+		font-size: 2em;
+	}
 }
 
-.phone img {
-  float:right;
+
+.hero p {
+	font-family: Georgia;
+	font-size: 21px;
+	color: rgba(29,24,31,0.70);
+	letter-spacing: 0px;
+	line-height: 29px;
+	padding-bottom: 20px;
+	padding-top: 20px;
 }
+
+hr {
+	opacity: 0.35;
+	border: 1px solid #979797;
+	margin: 50px 0 50px 0;
+}
+
+@media only screen and (max-width: 480px) {
+	hr {
+		margin: 20px 0 40px 0;
+	}
+
+.logo {
+	font-family: "ProximaNova-Regular", sans-serif;
+	font-size: 20px;
+	color: #1D181F;
+	letter-spacing: 0px;
+}
+
+.featured-img {
+	margin-bottom: 60px;
+	position: absolute;
+	opacity: 0.1;
+}
+
 
 /*-------------
  	Footer
@@ -215,4 +264,108 @@ letter-spacing: 0px;
     left: 0;
 		padding: 20px;
 		color: rgba(29,24,31,0.31);
+}
+
+
+
+/* FORMS */
+
+.field input[type=text] {
+	background: #FFFFFF;
+	border: 2px solid #DEDEDE;
+	color: #000;
+	margin-bottom: 20px;
+	padding: 16px 100px;
+	width: 100%;
+}
+
+.field input[type=button], input[type=submit], input[type=reset] {
+	background-color: #111;
+	border: none;
+	color: #fff;
+	font-size:18px;
+	padding: 16px 50px;
+	text-decoration: none;
+	margin: 40px 0px;
+	cursor: pointer;
+	width: 100%;
+}
+
+.fixed {}
+
+.form {
+	margin-bottom: 60px;
+}
+
+.field label {
+	margin-bottom:10px;
+	font-family: ProximaNova-SemiBold;
+	font-size: 18px;
+	color: rgba(29,24,31,0.70);
+	line-height: 21px;
+}
+
+.hero h3 {
+	font-family: ProximaNova-Semibold;
+	font-size: 2em;
+	color: #1D181F;
+	letter-spacing: -1px;
+	margin-bottom: 2rem;
+}
+
+
+
+
+/* FEATURES */
+
+.features {
+	background-color: white;
+}
+
+.features h1 {
+	font-family: ProximaNova-Bold;
+	font-size: 4em;
+	color: #1D181F;
+	letter-spacing: 0px;
+	padding-top: 50px;
+}
+
+@media only screen and (max-width: 480px) {
+	.features h1 {
+		font-size: 3em;
+		padding-top: 30px;
+	}
+}
+
+.feature-row {
+	float: left;
+	position: relative;
+}
+
+.feature-row h2 {
+	font-family: ProximaNova-Bold;
+	font-size: 29px;
+	color: #1D181F;
+	line-height: 29px;
+	padding-bottom: 3%;
+}
+
+.feature-row h3 {
+	font-family: ProximaNova-Semibold;
+	font-size: 20px;
+	color: #1D181F;
+	line-height: 29px;
+	padding-bottom:2%;
+}
+
+.feature-row p {
+	font-family: Georgia;
+	font-size: 16px;
+	color: rgba(29,24,31,0.70);
+	line-height: 21px;
+}
+
+.bullet {
+	padding-right: 5%;
+	padding-bottom: 5%;
 }
