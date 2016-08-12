@@ -60,11 +60,32 @@ nav {
 		margin-top: 30px;
 	}
 }
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape) {
+	nav {
+		margin-bottom: 0;
+		margin-top: 30px;
+	}
+}
+
+
 .main {
 	margin-top: 50px;
 }
 
 @media only screen and (max-width: 480px) {
+	.main {
+		margin-top:0;
+	}
+}
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape) {
 	.main {
 		margin-top:0;
 	}
@@ -185,6 +206,16 @@ body {
 		padding-right: 0;
 	}
 }
+
+@media only screen
+and (min-device-width : 414px)
+and (max-device-width : 736px)
+and (orientation : landscape) {
+	.mid-p {
+		padding-right: 0;
+	}
+}
+
 
 .hero h1 {
 	font-family: "ProximaNova-Extrabld", sans-serif;
