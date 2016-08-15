@@ -20,7 +20,8 @@
 
 /* Text styling */
 .cbp-so-section h2 {
-	font-family: "ProximaNova-Extrabld", sans-serif;
+	font-family: proxima-nova;
+	font-weight: 900;
 	font-size: 5em;
 	color: #1D181F;
 	letter-spacing: 0px;
