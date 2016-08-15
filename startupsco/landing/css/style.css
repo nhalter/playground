@@ -43,40 +43,6 @@ nav {
   margin-bottom: 40px;
 }
 
-
-.main {
-
-}
-
-.nav {
-	margin:0 auto;
-	padding: 60px;
-}
-
-.nav li {
-	font-family: ProximaNova-Bold;
-	font-size: 13px;
-	color: #FFFFFF;
-	letter-spacing: 1.73px;
-	display:inline;
-	text-transform: uppercase;
-	padding-right: 30px;
-}
-
-.nav li a {
-	text-decoration: none;
-	color: #fff;
-}
-
-.nav li a:hover {
-	text-decoration: underline;
-}
-
-.brand-bar {
-	position: absolute;
-}
-
-
 /*----------------
  	Hero Section
 ----------------*/
@@ -142,7 +108,8 @@ body {
 }
 
 .hero h2 {
-	font-family: ProximaNova-Light;
+	font-family: proxima-nova;
+	font-weight: 300;
 	font-size: 2em;
 	color: rgba(29,24,31,0.80);
 	letter-spacing: -2px;
@@ -151,7 +118,7 @@ body {
 }
 
 .hero p {
-	font-family: Georgia;
+	font-family: Georgia, serif;
 	font-size: 18px;
 	color: rgba(29,24,31,0.70);
 	letter-spacing: 0px;
@@ -197,7 +164,8 @@ hr {
 
 
 .hero h3 {
-	font-family: ProximaNova-Semibold;
+	font-family: proxima-nova;
+	font-weight:500;
 	font-size: 2em;
 	color: #1D181F;
 	letter-spacing: -1px;
@@ -214,7 +182,8 @@ hr {
 }
 
 .features h1 {
-	font-family: ProximaNova-Bold;
+	font-family: proxima-nova;
+	font-weight:900;
 	font-size: 7em;
 	color: #BDD4DE;
 	opacity: 0.8;
@@ -241,7 +210,8 @@ hr {
 }
 
 .feature-row h2 {
-	font-family: ProximaNova-Bold;
+	font-family: proxima-nova;
+	font-weight:900;
 	font-size: 18px;
 	color: #1D181F;
 	letter-spacing: 1px;
@@ -250,7 +220,8 @@ hr {
 }
 
 .feature-row h3 {
-	font-family: ProximaNova-Bold;
+	font-family: proxima-nova;
+	font-weight:900;
 	font-size: 14px;
 	color: #1D181F;
 	padding-bottom:2%;
@@ -292,7 +263,8 @@ hr {
 .rac small {
 	padding-top:20px;
 	font-size:12px;
-	font-family: ProximaNova-Semibold;
+	font-family: proxima-nova;
+	font-weight:600;
 	opacity:0.5;
 }
 
@@ -308,7 +280,8 @@ hr {
 }
 
 .rac h2 {
-	font-family: ProximaNova-Bold;
+	font-family: proxima-nova;
+	font-weight:900;
 	font-size: 18px;
 	color: #1D181F;
 	letter-spacing: 1px;
@@ -321,7 +294,8 @@ hr {
 }
 
 .rac ul li {
-	font-family: ProximaNova-Light;
+	font-family: proxima-nova;
+	font-weight:300;
 	padding-top: 20px;
 	font-size: 18px;
 }
@@ -338,7 +312,8 @@ hr {
 }
 
 .rac h3 {
-	font-family: ProximaNova-Bold;
+	font-family: proxima-nova;
+	font-weight:900;
 	font-size: 18px;
 	color: #1D181F;
 	letter-spacing: 1px;
@@ -532,7 +507,8 @@ hr {
 	display: block;
 	padding: 1em 0;
 	width: 100%;
-	font-family: ProximaNova-Bold;
+	font-family: proxima-nova;
+	font-weight:900;
 	font-size: 16px;
 }
 
@@ -663,7 +639,8 @@ hr {
 button[type="button"], button[type="submit"] {
 	color: #000;
 	background-color:transparent;;
-	font-family: ProximaNova-Bold;
+	font-family: proxima-nova;
+	font-weight:900;
 	font-size: 15px;
 	border: 3px solid black;
 	width: 50%;
@@ -753,7 +730,8 @@ Main components
 .cd-author .cd-author-info {
   text-align: left;
   line-height: 1.2;
-	font-family:proximanova-bold;
+	font-family: proxima-nova;
+	font-weight:900;
 }
 .cd-author .cd-author-info li:first-child {
   font-size: 14px;
@@ -855,8 +833,9 @@ Main components
   text-align: center;
   text-transform: uppercase;
   color: #6b6b70;
-	font-family:proximanova-bold;
-  font-size: 12px;
+	font-family: proxima-nova;
+	font-weight:900;
+	font-size: 12px;
   font-size: 30px;
   -webkit-transition: color, 0.2s;
   -moz-transition: color, 0.2s;
@@ -1030,7 +1009,8 @@ Main components
 		padding-bottom: 20px;
 	}
 	.rac h2 {
-		font-family: ProximaNova-Bold;
+		font-family: proxima-nova;
+		font-weight:900;
 		font-size: 18px;
 		color: #1D181F;
 		letter-spacing: 1px;
