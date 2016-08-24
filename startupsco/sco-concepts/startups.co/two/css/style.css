@@ -20,6 +20,20 @@ body {
   margin: 0;
   position: relative;
   background-color:#F7F6F1;
+	transition:background-color 0.5s ease;
+}
+
+.clicked {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	opacity: 0;
+	background-color: rgba(0,0,0,0.3);
+	content: '';
+	z-index: 999;
 }
 
 .container {
@@ -32,23 +46,25 @@ body {
  	Header
 -------------*/
 
+header {
+
+}
+
 /* Initial menu */
 .menu {
-  background: #202024;
+  background: #F7F6F1;
   left: -285px;  /* start off behind the scenes */
   height: 100%;
   position: fixed;
   width: 285px;
 }
 .menu ul {
-  border-top: 1px solid #636366;
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
 .menu li {
-  border-bottom: 1px solid #636366;
   font-family: 'Open Sans', sans-serif;
   line-height: 45px;
   padding-bottom: 3px;
@@ -57,20 +73,24 @@ body {
 }
 
 .menu a {
-  color: #fff;
-  font-size: 15px;
+  color: #000;
+	font-family:proxima-nova;
+	font-weight:500;
+  font-size: 19px;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .icon-close {
   cursor: pointer;
   padding-left: 10px;
   padding-top: 10px;
+	z-index: 6000;
 }
 
 .icon-menu {
 	color: #000;
+	z-index: 5001;
+	position: relative;
 	cursor: pointer;
 	font-family: proxima-nova, sans-serif;
 	font-weight:600;
@@ -79,6 +99,7 @@ body {
 	padding-left: 30px;
 	padding-top: 30px;
 }
+
 
 .icon-menu i {
 }
@@ -167,7 +188,7 @@ li > a:hover:before {
 
 .hero{
 padding-bottom: 0;
-/*background-image: url('../img/wave.png');*/
+background-image: url('../img/1580.jpeg');
 background-repeat: no-repeat;
 background-position: 0;
 -ms-background-size: cover;
@@ -383,9 +404,6 @@ h1{
 p{
     font-size:1em;
     line-height:1.5em;
-}
-.wrapper{
-    overflow:hidden;
 }
 section {
     -moz-transition:all 200ms ease-in;
