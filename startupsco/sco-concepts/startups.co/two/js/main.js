@@ -1,26 +1,23 @@
-$(document).ready(function(){
-	$(".navi").hide().fadeIn(1000);
-	$('a.link').hover(function() {
-		$('a.link').not(this).toggleClass('toggle');
-	})
-});
+var main = function () {
+    $('.icon-menu').click(function() {
+        $('.menu').animate({
+            left: '0px'
+        }, 200);
 
-$(function() {
-	$(window).scroll( function() {
+        $('body').animate({
+            left: '285px'
+        }, 200);
+    });
 
-		$('.tile').each(function(i){
+    $('.icon-close').click(function() {
+        $('.menu').animate({
+            left: '-285px'
+        }, 200);
 
-			var bottom_of_object = $(this).position().top + $(this).outerHeight();
-			var bottom_of_window = $(window).scrollTop() + $(window).height();
+        $('body').animate({
+            left:'0px'
+        }, 200);
+    });
+};
 
-			/* Adjust the "200" to either have a delay or that the content starts fading a bit before you reach it  */
-			bottom_of_window = bottom_of_window + 200;
-
-			if( bottom_of_window > bottom_of_object) {
-
-				$(this).animate({'opacity':'1'},500);
-			}
-
-		});
-	});
-});
+$(document) .ready(main);
