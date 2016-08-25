@@ -5,6 +5,50 @@
 @import url("responsive.gs.12col.css");
 
 
+
+
+.remove {
+	padding-left: 10px;
+	    height: 30px;
+	    background-color: transparent;
+	    border: 3px solid black;
+	    margin: 10px;
+	    padding-right: 10px;
+	    font-family: helvetica;
+	    font-size: 20px;
+}
+
+#task  {
+	height: 40px;
+	width: 300px;
+	padding-left: 10px;
+	font-family: helvetica;
+	font-size: 17px;
+}
+
+#add {
+	text-align:center;
+	font-size: 15px;
+	font-family:helvetica;
+	font-weight:bold;
+}
+
+button {
+	padding-left:40px;
+	height: 40px;
+	background-color:transparent;
+	border: 3px solid black;
+	margin: 10px;
+	padding-right: 40px;
+}
+
+#todos li {
+	font-family:helvetica;
+	font-size: 25px;
+}
+
+
+
 /*-------------
  	General
 -------------*/

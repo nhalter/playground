@@ -1,5 +1,9 @@
 var main = function () {
 
+    window.sr = ScrollReveal();
+    sr.reveal('.tldr');
+    sr.reveal('.col');
+
 
     $('.icon-menu').click(function() {
 
