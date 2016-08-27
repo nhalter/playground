@@ -1,9 +1,57 @@
+$(function() {
+  var a = function() {
+    var b = $(window).scrollTop();
+    var d = $("#scroller-anchor").offset({scroll:false}).top;
+    var c=$(".tabs");
+    if (b>d) {
+      c.css({position:"fixed",top:"0px"})
+    } else {
+      if (b<=d) {
+        c.css({position:"relative",top:""})
+      }
+    }
+  };
+  $(window).scroll(a);a()
+});
+
+
+$(function() {
+  $('a.scroll[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
+/***** Fixed Tabs *****/
+
+
 var main = function () {
 
+  var elementPosition = $('nav').offset();
+
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > elementPosition.top) {
+            $('nav').css('position', 'fixed').css('top', '0');
+        } else {
+            $('nav').css('position', 'static');
+        }
+     });
+
+    /* scroll reveal */
     window.sr = ScrollReveal();
     sr.reveal('.tldr');
     sr.reveal('.col');
 
+
+/* mobile menu */
 
     $('.icon-menu').click(function() {
 
@@ -34,7 +82,7 @@ var main = function () {
                'left': 0,
                'background-color': 'rgba(0,0,0,1)',
                'width': '100%',
-               'z-index': 5000,
+               'z-index': 10000,
                'transition' : 'opacity 0.3s ease-in-out'
              });
           });
@@ -65,23 +113,5 @@ var main = function () {
 });
 
 };
-
-$(function() {
-  var a = function() {
-    var b = $(window).scrollTop();
-    var d = $("#scroller-anchor").offset({scroll:false}).top;
-    var c=$(".tabs");
-    if (b>d) {
-      c.css({position:"fixed",top:"0px"})
-    } else {
-      if (b<=d) {
-        c.css({position:"relative",top:""})
-      }
-    }
-  };
-  $(window).scroll(a);a()
-});
-
-
 
 $(document) .ready(main);

@@ -4,6 +4,9 @@
 /* IMPORT 12 COLUMN RESPONSIVE GS */
 @import url("responsive.gs.12col.css");
 
+/* IMPORT MEDIA QUERIES */
+
+
 
 /*-------------
  	General
@@ -95,7 +98,7 @@ header {
   text-decoration: none;
 }
 .menu-btn {
-	color:#fff;
+	color:#000;
 }
 .icon-close {
   cursor: pointer;
@@ -115,7 +118,7 @@ header {
 
 .icon-menu {
 	color: #000;
-	z-index: 2;
+	z-index: 9;
 	position: relative;
 	cursor: pointer;
 	font-family: proxima-nova, sans-serif;
@@ -220,7 +223,7 @@ height: 100vh;
 
 .brand {
 	background-color: transparent;
-	z-index: 1;
+	z-index: 2;
 	position: relative;
 }
 
@@ -228,9 +231,18 @@ height: 100vh;
 	margin-left: auto;
 	margin-right: auto;
 	position: relative;
-	top: 50%;
+	top: 60%;
 	transform: translateY(-80%) !important;
 }
+.content a {
+  color: #000;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+	padding-right: 80px;
+}
+
+
 
 .mid-p {
 	padding-right: 20%;
@@ -283,10 +295,8 @@ height: 100vh;
 	color: rgba(29,24,31,0.70);
 	letter-spacing: 0px;
 	line-height: 27px;
-	padding-bottom: 20px;
-	padding-top: 10px;
 	text-align: center;
-	margin:20px;
+	margin-top:80px;
 }
 
 hr {
@@ -394,15 +404,6 @@ hr.top {
 	  margin: 20px 0 20px 0;
 }
 
-.rac h1 {
-	font-family: proxima-nova;
-	font-weight: 900;
-	font-size: 72px;
-	color: #1D181F;
-	letter-spacing: -2px;
-	padding-bottom: 20px;
-	padding-top: 20px;
-}
 
 .rac small {
 	font-family: proxima-nova;
@@ -490,6 +491,9 @@ hr.top {
 
 .body-text {
 	padding-top: 40px;
+	margin-bottom:500px;
+	position: relative;
+  z-index: -5;
 }
 
 
@@ -647,81 +651,6 @@ input[type="checkbox"]:checked ~ section{
 
 
 
-/* MEDIA QUERIES */
-
-
-
-@media screen and (min-width: 769px) {
-	.menu {
-		left:0;
-		background:transparent;
-		width:100%;
-		padding-left:20px;
-		z-index: 2;
-		position: absolute;
-	}
-	.menu a {
-		font-weight: 600;
-		color: #000;
-		font-size: 19px;
-	}
-	.menu ul {
-	}
-	.menu li {
-		float: left;
-    padding-top: 40px;
-	}
-	.menu-btn {
-		display:none;
-	}
-	.menu li.right {
-		float:right;
-		padding-right:20px;
-	}
-
-	.icon-close {
-		display:none;
-	}
-
-	.hero h1 {
-		font-family: proxima-nova;
-		font-weight: 900;
-		text-align: center;
-		font-size: 144px;
-		color: #1D181F;
-		letter-spacing: -3.35px;
-	}
-	.hero h2 {
-		font-family: Georgia;
-		font-weight: 300;
-		letter-spacing: -2px;
-		padding-top: 40px;
-		text-align: center;
-		font-family: Georgia;
-		font-size: 36px;
-		color: rgba(29,24,31,0.60);
-		padding-left: 10%;
-		padding-right: 10%;
-	}
-	.mouse {
-		text-align: center;
-		padding-top: 120px;
-		vertical-align: bottom;
-	}
-	.tabs-style-underline nav a span {
-		font-size:18px;
-	}
-
-	.content-wrap section p {
-		width:70%;
-	}
-	.body-text {
-		padding-left: 40px;
-		padding-top: 40px;
-	}
-}
-
-
 
 /* Default tab style */
 
@@ -750,6 +679,7 @@ input[type="checkbox"]:checked ~ section{
 /* Nav */
 .tabs nav {
 	text-align: center;
+	width: 100%;
 }
 
 .tabs nav ul {
@@ -868,15 +798,67 @@ input[type="checkbox"]:checked ~ section{
 }
 
 /* Content */
+
+/*#section-underline-1 {
+	background-color:#F7F6F1;
+	position:relative;
+	z-index:-5;
+	letter-spacing:-12px;
+
+}
+#section-underline-2 {
+	background-color:#3198DE;
+	color:#fff;
+	position:relative;
+	z-index:-5;
+}
+#section-underline-3 {
+	background-color:#2A262C;
+	color:#fff;
+	position:relative;
+	z-index:-5;
+}
+#section-underline-3 h1{
+	color:#DE2000;
+}
+#section-underline-4 {
+	background-color:#6CC9E0;
+	color:#fff;
+	position:relative;
+	z-index:-5;
+}
+#section-underline-5 {
+	background-color:#59BB57;
+	color:#fff;
+	position:relative;
+	z-index:-5;
+}
+#section-underline-2 h1,
+#section-underline-4 h1,
+#section-underline-5 h1{
+	color:#fff;
+}
+#section-underline-2 p,
+#section-underline-3 p,
+#section-underline-4 p,
+#section-underline-5 p{
+	color:rgba(255, 255, 255, 0.6);
+}*/
+.brand-row {
+	max-width: 1200px;
+	margin: auto;
+}
 .content-wrap {
 	position: relative;
 	font-family: proxima-nova;
+	position: relative;
+  z-index: -5;
 }
 
 .content-wrap h1 {
 	font-family: proxima-nova;
 	font-weight: 900;
-	font-size: 72px;
+	font-size: 48px;
 	color: #1D181F;
 	letter-spacing: -2px;
 	padding-bottom: 20px;
@@ -888,8 +870,18 @@ input[type="checkbox"]:checked ~ section{
 	display: none;
 	margin: 0 auto;
 	padding: 1em;
-	max-width: 1200px;
+	max-width: 100vw;
 	text-align: center;
+}
+
+.sco {
+	margin: 0 auto;
+	padding: 8em;
+	max-width: 100vw;
+	text-align: center;
+	background-color: red;
+	position: relative;
+	z-index: 2;
 }
 
 .content-wrap section.content-current {
@@ -920,15 +912,6 @@ input[type="checkbox"]:checked ~ section{
 .no-flexbox nav ul li {
 	min-width: 15%;
 	display: inline-block;
-}
-
-@media screen and (max-width: 58em) {
-	.tabs nav a.icon span {
-		display: none;
-	}
-	.tabs nav a:before {
-		margin-right: 0;
-	}
 }
 
 /*****************************/
@@ -1014,18 +997,19 @@ input[type="checkbox"]:checked ~ section{
 /*****************************/
 
 .tabs-style-underline nav {
-	background: #1D181F;
+	background: #FFFFFF;
+	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.05);
 }
 
 .tabs-style-underline nav a {
 	padding: 0.25em 0 0.5em;
-	border-left: 1px solid #1D181F;
+	border-left: 1px solid rgba(0,0,0,0.05);
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
 
 .tabs-style-underline nav li:last-child a {
-	border-right: 1px solid #1D181F;
+	border-right: 1px solid rgba(0,0,0,0.05);
 }
 
 .tabs-style-underline nav li a::after {
@@ -1049,8 +1033,8 @@ input[type="checkbox"]:checked ~ section{
 
 .tabs-style-underline nav a span {
 	font-weight: 500;
-	color:#fff;
-	font-size:14px;
+	color:#000;
+	font-size:13px;
 }
 
 
@@ -1067,4 +1051,170 @@ canvas {
 	width: 100%;
 	opacity:0.5;
 	height: 100vh;
+}
+
+/* sticky header *
+/* Center button for demo purposes */
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Button styles */
+button {
+  padding: 0 0 6px 15px;
+  position: relative;
+  height: 70px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: left;
+  color: #3C474B;
+  background: none;
+  border: 3px solid rgba(0, 0, 0, .3);
+  outline: none;
+  webkit-tap-highlight-color: transparent;
+  overflow: hidden;
+  cursor: pointer;
+}
+button:before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  left: 300px;
+	height: 40px;
+  width: 2px;
+  background: rgba(0, 0, 0, 1);
+}
+button:hover {
+	  border: 3px solid rgba(0, 0, 0, 1);
+		transition: ease-in 0.3s;
+}
+
+
+.button__arrow {
+	position: absolute;
+	top: 50%;
+	right: 19px;
+	width: 25px;
+	fill: #1D181F;
+	transition: 0.35s;
+	transform: translate3d(0, -50%, 0);
+}
+
+.button__arrow--in {
+  transform: translate3d(0, -60px, 0);
+}
+
+/* Hover styles */
+button:hover .button__arrow--in {
+  transform: translate3d(0, -50%, 0);
+}
+button:hover .button__arrow--out {
+  transform: translate3d(0, 60px, 0);
+}
+
+
+
+
+/************************************************/
+/************************************************/
+/************************************************/
+/************************************************/
+
+/** MEDIA QUERIES -- NOTHING PAST THIS POINT **/
+
+/************************************************/
+/************************************************/
+/************************************************/
+/************************************************/
+
+
+@media screen and (min-width: 769px) {
+	.menu {
+		left:0;
+		background:transparent;
+		width:100%;
+		padding-left:20px;
+		z-index: 2;
+		position: absolute;
+	}
+	.menu a {
+		font-weight: 600;
+		color: #000;
+		font-size: 19px;
+	}
+	.menu ul {
+	}
+	.menu li {
+		float: left;
+    padding-top: 40px;
+	}
+	.menu-btn {
+		display:none;
+	}
+	.menu li.right {
+		float:right;
+		padding-right:20px;
+	}
+
+	.icon-close {
+		display:none;
+	}
+
+	.hero h1 {
+		font-family: proxima-nova;
+		font-weight: 900;
+		text-align: center;
+		font-size: 144px;
+		color: #1D181F;
+		letter-spacing: -3.35px;
+	}
+	.hero h2 {
+		font-family: Georgia;
+		font-weight: 300;
+		letter-spacing: -2px;
+		padding-top: 40px;
+		text-align: center;
+		font-family: Georgia;
+		font-size: 36px;
+		color: rgba(29,24,31,0.60);
+		padding-left: 10%;
+		padding-right: 10%;
+	}
+	.mouse {
+		text-align: center;
+		padding-top: 120px;
+		vertical-align: bottom;
+	}
+	.tabs-style-underline nav a span {
+		font-weight: 500;
+		color:#000;
+		font-size:18px;
+	}
+
+	.content-wrap section p {
+		width:70%;
+	}
+	.body-text {
+		padding-top: 40px;
+	}
+	.content-wrap h1 {
+		font-size:8em;
+		letter-spacing:-12px;
+
+	}
+}
+
+
+
+@media screen and (max-width: 58em) {
+	.tabs nav a.icon span {
+		display: none;
+	}
+	.tabs nav a:before {
+		margin-right: 0;
+	}
 }
