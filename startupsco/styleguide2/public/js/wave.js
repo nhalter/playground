@@ -223,7 +223,7 @@ console.log("Hi");
 			// saturation and value are calculated from a range of 0 to 1. We make
 			// That conversion here.
 			s /= 100;
-			v /= 100;
+			v /= 10;
 
 			if(s == 0) {
 				// Achromatic (grey)
