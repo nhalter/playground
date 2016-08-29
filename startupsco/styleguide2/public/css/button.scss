@@ -1,0 +1,79 @@
+/* Variables */
+$color__blue: #3C474B;
+
+$transition: .35s;
+
+/* Mixins */
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Resets */
+* {
+  box-sizing: border-box;
+}
+
+/* Center button for demo purposes */
+.center {
+  @include center;
+}
+
+/* Button styles */
+button {
+  padding: 0 0 0 15px;
+  position: relative;
+  width: 250px;
+  height: 70px;
+  font-family: helvetica;
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 0.2em;
+  text-align: left;
+  color: $color__blue;
+  background: none;
+  border: 5px solid $color__blue;
+  outline: none;
+  webkit-tap-highlight-color: rgba(0,0,0,0);
+  overflow: hidden;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 160px;
+    height: 40px;
+    width: 2px;
+    background: $color__blue;
+  }
+}
+
+.button__arrow {
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  width: 25px;
+  fill: $color__blue;
+  transition: $transition;
+  transform: translate3d(0, -50%, 0);
+}
+
+.button__arrow--in {
+  transform: translate3d(0, -60px, 0);
+}
+
+
+/* Hover styles */
+button:hover {
+
+  .button__arrow--in {
+    transform: translate3d(0, -50%, 0);
+  }
+
+  .button__arrow--out {
+    transform: translate3d(0, 60px, 0);
+  }
+}
