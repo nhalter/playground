@@ -6,19 +6,16 @@ $(function() {
       if (target.length) {
         $('html, body').animate({
           scrollTop: target.offset().top
-        }, 1000);
+        }, 600);
         return false;
       }
     }
   });
 });
 
-/***** Fixed Tabs *****/
-
-
 var main = function () {
 
-  var elementPosition = $('nav').offset();
+  /*var elementPosition = $('nav').offset();
 
     $(window).scroll(function () {
         if ($(window).scrollTop() > elementPosition.top) {

@@ -395,14 +395,40 @@ hr.top {
 	margin: -20px 0 50px 0;
 }
 
-
-.key {
+/* Full width background colors */
+.tan {
 	width:100%;
 	background-color:rgb(247,246,241);
 }
-.steps-bg {
+.white {
 	width:100%;
-	background-color:rgb(247,246,241);
+	background-color:rgb(255, 255, 255);
+}
+.black {
+	width:100%;
+	background-color:rgba(0, 0, 0, 0.7);
+	position: relative;
+	overflow: hidden;
+}
+
+.black:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background-image: url('../img/1578.jpeg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
 }
 
 
@@ -411,9 +437,7 @@ hr.top {
 .steps {
   padding-bottom: 100px;
 	display: block;
-	background-color: rgb(255,255,255);
 	margin: 0 auto;
-	height: 1000px;
 }
 
 .steps h1 {
@@ -445,9 +469,6 @@ hr.top {
 	color: rgb(29,24,31);
 	font-weight:400;
 	letter-spacing: -2px;
-	padding-top: 40px;
-	float:left;
-	padding-left:40px;
 }
 
 .steps ul {
@@ -477,8 +498,8 @@ hr.top {
 	color: rgb(29,24,31);
 	font-weight:700;
 	letter-spacing: -1px;
-  margin-bottom: 40px;
-	text-align:center;
+  padding: 40px 0 40px 0;
+	float:left;
 	}
 
 .steps strong {
@@ -515,6 +536,233 @@ hr.top {
 }
 
 
+/* Why Us */
+
+.why-us-bg {
+	background: url(../img/1089.jpg) no-repeat;
+	background-size: cover;
+}
+
+.why-us {
+  padding-bottom: 100px;
+	display: block;
+	background-color: transparent;
+	margin: 0 auto;
+	padding-top:80px;
+}
+
+.why-us h1 {
+	font-family: proxima-nova;
+	font-weight: 800;
+	font-size: 1.3em;
+	z-index: 1;
+	color: rgba(255, 255, 255, 1);
+	letter-spacing: 6px;
+	padding-bottom: 40px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.why-us h1:after {
+	content:" ";
+	border-bottom: 5px solid black;
+}
+.why-us hr {
+	  margin: 20px 0 20px 0;
+}
+
+
+.why-us small {
+	font-family: proxima-nova;
+	font-weight: 900;
+	font-size: 14px;
+	color: rgb(29,24,31);
+	letter-spacing: 1px;
+	padding-bottom: 40px;
+	text-transform: uppercase;
+}
+
+.why-us h2 {
+	font-family: proxima-nova;
+	font-size: 48px;
+	color: rgb(29,24,31);
+	font-weight:900;
+	letter-spacing: -2px;
+	margin-bottom: 20px;
+}
+
+.why-us ul {
+
+}
+
+.why-us ul li {
+	font-family: proxima-nova;
+	font-weight:300;
+	font-size: 18px;
+}
+
+.why-us p {
+	font-family: Georgia;
+	font-size: 1.5em;
+	color: rgba(255, 255, 255, 0.6);
+	padding-bottom: 20px;
+	padding-top: 10px;
+	width: 55%;
+	z-index: 1;
+	position: relative;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.why-us h3 {
+	font-family: proxima-nova;
+	font-size: 32px;
+	color: rgb(29,24,31);
+	font-weight:700;
+	letter-spacing: -2px;
+  margin-bottom: 40px;
+	}
+
+.why-us strong {
+	font-family: proxima-nova;
+	font-weight:600;
+	font-size: 24px;
+	color: rgb(29,24,31);
+}
+
+/* 5 Reasons */
+
+.reasons {
+  padding-bottom: 100px;
+	display: block;
+	background-color: rgb(255, 255, 255);
+	margin: 0 auto;
+	padding-top:80px;
+}
+
+.reasons h1 {
+	font-family: proxima-nova;
+	font-weight: 700;
+	font-size: 4.8em;
+	z-index: 1;
+	color: rgba(29,24,31, 1);
+	letter-spacing: -4px;
+	padding-bottom: 40px;
+	line-height: 64px;
+	text-align:center;
+}
+
+.reasons h1:after {
+	content:" ";
+	border-bottom: 5px solid black;
+}
+.reasons hr {
+	  margin: 20px 0 20px 0;
+}
+
+
+.reasons small {
+	font-family: proxima-nova;
+	font-weight: 900;
+	font-size: 14px;
+	color: rgb(29,24,31);
+	letter-spacing: 1px;
+	padding-bottom: 40px;
+	text-transform: uppercase;
+}
+
+.reasons h2 {
+	font-family: proxima-nova;
+  font-size: 2.4em;
+  color: rgb(29,24,31);
+  font-weight: 500;
+  letter-spacing: -2px;
+  padding-bottom: 40px;
+}
+
+.reasons ul {
+
+}
+
+.reasons ul li {
+	font-family: proxima-nova;
+	font-weight:300;
+	font-size: 18px;
+}
+
+.reasons p {
+	font-family: Georgia;
+	font-size: 1.3em;
+	color: rgba(0,0,0,0.6);
+	padding-bottom: 20px;
+	padding-top: 10px;
+	z-index: 1;
+	position: relative;
+	width:80%;
+}
+
+.reasons h3 {
+	font-family: proxima-nova;
+	font-size: 32px;
+	color: rgb(29,24,31);
+	font-weight:700;
+	letter-spacing: -2px;
+  margin-bottom: 40px;
+	}
+
+.reasons strong {
+	font-family: proxima-nova;
+	font-weight:600;
+	font-size: 24px;
+	color: rgb(29,24,31);
+}
+
+.reason-row {
+	padding-top: 80px;
+	padding-bottom: 80px;
+	display: inline-block;
+}
+
+.list--content {
+    display: block;
+    padding: .5rem 0 .5rem 6.75rem;
+    position: relative;
+}
+
+.number {
+	font-size: 4.5rem;
+	letter-spacing: -0.025em;
+	color: rgb(255,86,41);
+	line-height: 1;
+	position: relative;
+	top: 0;
+	font-family: proxima-nova;
+	font-weight: 700;
+	border-top: 5px solid rgb(255,86,41);
+	width: 13%;
+	padding-top: 10px;
+	padding-bottom: 20px;
+}
+
+.right-img {
+	background-color:#eee;
+	height:600px;
+	float:right;
+}
+
+.left-img {
+	background-color:#eee;
+	height:600px;
+	float:left;
+}
+.left-text {
+	padding-right: 5%;
+	padding-left: 80px;
+}
+.right-text {
+	padding-left: 5%;
+	padding-right: 80px;
+}
+
 /* RAC */
 
 .rac {
@@ -522,16 +770,16 @@ hr.top {
 	display: block;
 	background-color: rgb(247,246,241);
 	margin: 0 auto;
-	padding-top:40px;
+	padding-top:80px;
 }
 
 .rac h1 {
 	font-family: proxima-nova;
 	font-weight: 700;
-	font-size: 12em;
+  font-size: 3.6em;
 	z-index: 1;
-	color: rgba(29,24,31, 0.05);
-	letter-spacing: -12px;
+	color: rgba(29,24,31, 1);
+	letter-spacing: -2px;
 }
 
 .rac hr {
@@ -594,8 +842,6 @@ hr.top {
 	font-size: 24px;
 	color: rgb(29,24,31);
 }
-
-
 
 
 
@@ -1003,8 +1249,8 @@ input[type="checkbox"]:checked ~ section{
 
 .content-wrap h1 {
 	font-family: proxima-nova;
-	font-weight: 900;
-	font-size: 48px;
+	font-weight: 700;
+	font-size: 3.6em;
 	color: rgb(29,24,31);
 	letter-spacing: -2px;
 	padding-bottom: 20px;
@@ -1333,14 +1579,13 @@ canvas {
 		font-family: proxima-nova;
 		font-weight: 700;
 		text-align: center;
-		font-size: 14.4em;
+		font-size: 7.2em;
 		color: rgb(29,24,31);
 		letter-spacing: -6px;
+		padding-bottom: 100px;
 	}
 	.hero h1 span {
-		font-family:ff-market-web;
-		font-size:1.5em;
-		color: rgb(255,86,41);
+		text-decoration: line-through;
 	}
 	.hero h2 {
 		font-family: Georgia;
@@ -1372,10 +1617,9 @@ canvas {
 		padding-bottom:100px;
 	}
 	.content-wrap h1 {
-		font-size:4.8em;
-		border-right: 3px solid rgba(0,0,0,0.21);
 		padding-right: 40px;
-		float:left;
+		font-weight: 700;
+		font-size: 3.6em;
 	}
 }
 
