@@ -1,3 +1,25 @@
+function update() {
+    if ($(window).scrollTop() > 1200) {
+        $('.rac_scroll').animate({
+            "bottom": '0px'
+        }, 300);
+    } else {
+        $('.rac_scroll').animate({
+            "bottom": '-90px'
+        }, 300);
+    }
+}
+
+
+$(function() {
+    $('.rac_scroll').click(function() {
+        $(this).hide(400);
+        return false;
+     });
+ });
+
+setInterval(update, 500);
+
 $(function() {
   $('a.scroll[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {

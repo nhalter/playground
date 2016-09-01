@@ -12,20 +12,29 @@
     <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
 
-<body>
+<body id="problem">
+  <nav class="fixed-nav">
+    <ul>
+      <li><a href="#problem" class="scroll">Problem</a></li>
+      <li><a href="#solution" class="scroll">Solution</a></li>
+      <li><a href="#how-we-work" class="scroll">How we work</a></li>
+      <li><a href="#why-us" class="scroll">Why us?</a></li>
+      <li><a href="#five-reasons" class="scroll">5 Reasons</a></li>
+    </ul>
+  </nav>
+
 
 <!-- *** Begin Hero...I can be your hero baby *** -->
 
     <div class="hero-full fade">
         <header>
-            <section>
+            <section class="row">
                 <article class="col span_12 logo-z">
                     <a href="index.html" title="Return to the homepage"><img class="logo" src="img/logo.svg" alt="Startups.co logo" />
                     </a>
                 </article>
             </section>
         </header>
-        <div id="red">
             <section class="row hero brand">
                 <article class="col span_12 content">
                     <h1 class="fade-in">Write content.<br/>Get <span>clicks</span>.</h1>
@@ -34,7 +43,6 @@
                     </p>
                 </article>
             </section>
-        </div>
     </div>
 
 
@@ -97,9 +105,29 @@
 
     <!-- *** End Key Selling Point/"Solution" *** -->
 
+<!-- *** Begin Fixed CTA *** -->
+
+<div class="rac_scroll">
+  <div class="container row">
+    <section class="row">
+      <article class="col span_7">
+        Ready to blah blah blah? Well click this button.
+      </article>
+      <article class="col span_3">
+          <a href="#solution" class="scroll_button scroll">Request a consultation</a>
+      </article>
+      <aside class="col span_2">
+        <a href="#" class="close">Close</a>
+      </aside>
+    </section>
+  </div>
+</div>
 
 
-<div class="key">
+<!-- *** End Fixed CTA *** -->
+
+
+<div class="key" id="how-we-work">
     <!-- *** Begin Steps *** -->
 
       <section class="row steps fade">
@@ -180,7 +208,7 @@
 
 
     <!-- *** Begin Why Us *** -->
-    <div class="black">
+    <div class="black" id="why-us">
       <div class="container row">
         <section class="row why-us">
           <article class="col span_12 fade">
@@ -197,7 +225,7 @@
 
     <!-- *** Begin 5 Reasons *** -->
 
-    <div class="white">
+    <div class="white" id="five-reasons">
       <div class="row">
         <section class="row reasons">
           <article class="col span_12 fade">
