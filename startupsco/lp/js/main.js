@@ -1,3 +1,38 @@
+var sections = $('.scroll-active')
+  , nav = $('nav')
+  , nav_height = nav.outerHeight();
+
+$(window).on('scroll', function () {
+  var cur_pos = $(this).scrollTop();
+
+  sections.each(function() {
+    var top = $(this).offset().top
+        bottom = top + $(this).outerHeight();
+
+    if (cur_pos >= top && cur_pos <= bottom) {
+      nav.find('a').removeClass('active');
+      sections.removeClass('active');
+
+      $(this).addClass('active');
+      nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
+    }
+  });
+});
+
+nav.find('a').on('click', function () {
+  var $el = $(this)
+    , id = $el.attr('href');
+
+  $('html, body').animate({
+    scrollTop: $(id).offset().top
+  }, 1000);
+
+  return false;
+});
+
+
+/* cta bar
+
 function update() {
     if ($(window).scrollTop() > 1200) {
         $('.rac_scroll').animate({
@@ -10,7 +45,6 @@ function update() {
     }
 }
 
-
 $(function() {
     $('.rac_scroll').click(function() {
         $(this).hide(400);
@@ -18,9 +52,9 @@ $(function() {
      });
  });
 
-setInterval(update, 500);
+setInterval(update, 500); end cta bar */
 
-$(function() {
+/*$(function() {
   $('a.scroll[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
       var target = $(this.hash);
@@ -33,7 +67,7 @@ $(function() {
       }
     }
   });
-});
+});*/
 
 var main = function () {
 
