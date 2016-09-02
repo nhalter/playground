@@ -2407,15 +2407,16 @@ canvas {
         margin: 0 auto;
     }
     .reasons h1 {
-        font-family: proxima-nova;
-        font-weight: 700;
-        font-size: 4.8em;
-        z-index: 1;
-        color: rgba(29, 24, 31, 1);
-        letter-spacing: -4px;
-        padding-bottom: 40px;
-        line-height: 64px;
-        text-align: center;
+			font-family: proxima-nova;
+	    font-weight: 700;
+	    font-size: 3.6em;
+	    z-index: 1;
+	    color: rgba(29, 24, 31, 1);
+	    letter-spacing: -3px;
+	    padding-bottom: 40px;
+	    line-height: 64px;
+	    text-align: center;
+	    padding-top: 80px;
     }
     .right-img {
         background-color: #eee;
