@@ -56,21 +56,21 @@ $(function() {
 /* hide left nav on page load */
 
 
-/*$(window).scroll(function() { // when the page is scrolled run this
+$(window).scroll(function() { // when the page is scrolled run this
     if ($(this).scrollTop() != 0) { // if you're NOT at the top
         $('.fixed-nav').fadeIn("fast"); // fade in
     } else { // else
         $('.fixed-nav').fadeOut("fast"); // fade out
     }
-}); */
+});
 
-$(window).scroll(function() { // when the page is scrolled run this
+/*$(window).scroll(function() { // when the page is scrolled run this
     if ($(this).scrollTop() != 0) { // if you're NOT at the top
         $('.fixed-nav-right').fadeIn("fast"); // fade in
     } else { // else
         $('.fixed-nav-right').fadeOut("fast"); // fade out
     }
-});
+});*/
 
 
 /* Left Nav */
