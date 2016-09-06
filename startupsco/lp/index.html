@@ -5,9 +5,10 @@
     <meta charset="utf-8" />
     <title>Startups.co</title>
     <link href="css/reset.css" rel="stylesheet" />
-    <link href="css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="js/modernizr.custom.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vivus/0.3.1/vivus.js"></script>
     <script src="https://use.typekit.net/fju7mvk.js"></script>
     <script>
         try {
@@ -20,9 +21,13 @@
 
 <body>
 
+
     <article class="col span_12 logo-z">
         <a href="index.html" title="Return to the homepage"><img class="logo" src="img/logo.svg" alt="Startups.co logo" />
         </a>
+        <!--<button id="light">Light<br/>Theme</button><br/>
+        <button id="dark">Dark<br/>Theme</button>-->
+
     </article>
 
     <nav class="fixed-nav">
@@ -31,7 +36,7 @@
             <li class="two"><a href="#solution">Solution</a></li>
             <li class="three"><a href="#how-we-work">How we work</a></li>
             <li class="four"><a href="#why-us">Why us?</a></li>
-            <li class="five"><a href="#five-reasons">5 Reasons</a></li>
+            <li class="five"><a href="#case-study">Case Study</a></li>
         </ul>
     </nav>
 
@@ -39,28 +44,13 @@
         <ul>
             <li class="one">
                 <a href="#problem">
-                    <svg style="padding-right: 13px;" width="32px" height="30px" viewBox="48 49 32 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
-    <desc>Created with Sketch.</desc>
-    <defs></defs>
-    <g id="1472798219_feedback" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(48.000000, 49.000000)">
-        <g id="Group" fill="#FFFFFF">
-            <path d="M29,0 L3,0 C1.34575,0 0,1.34575 0,3 L0,20 C0,21.65425 1.34575,23 3,23 L8,23 L8,29 C8,29.4045 8.24375,29.769 8.61725,29.92375 C8.741,29.975 8.871,30 8.99975,30 C9.26,30 9.51575,29.8985 9.70725,29.707 L16.414,23 L29,23 C30.65425,23 32,21.65425 32,20 L32,3 C32,1.34575 30.65425,0 29,0 L29,0 Z M30,20 C30,20.5515 29.5515,21 29,21 L15.586,21 L10,26.58575 L10,21 L3,21 C2.4485,21 2,20.5515 2,20 L2,3 C2,2.4485 2.4485,2 3,2 L29,2 C29.5515,2 30,2.4485 30,3 L30,20 L30,20 Z" id="Shape"></path>
-            <path d="M26,5 L6,5 C5.44775,5 5,5.44775 5,6 C5,6.55225 5.44775,7 6,7 L26,7 C26.55225,7 27,6.55225 27,6 C27,5.44775 26.55225,5 26,5 L26,5 Z" id="Shape"></path>
-            <path d="M26,9 L6,9 C5.44775,9 5,9.44775 5,10 C5,10.55225 5.44775,11 6,11 L26,11 C26.55225,11 27,10.55225 27,10 C27,9.44775 26.55225,9 26,9 L26,9 Z" id="Shape"></path>
-            <path d="M16,13 L6,13 C5.44775,13 5,13.44775 5,14 C5,14.55225 5.44775,15 6,15 L16,15 C16.55225,15 17,14.55225 17,14 C17,13.44775 16.55225,13 16,13 L16,13 Z" id="Shape"></path>
-        </g>
-    </g>
-</svg>Chat</a>
+                Chat</a>
             </li>
         </ul>
     </nav>
 
     <div class="sections">
-
-        <!-- *** Begin Hero...I can be your hero baby *** -->
-
-        <div class="hero-full fade scroll-active" id="problem">
+        <div class="hero-full fade scroll-active sect" id="problem">
             <header>
                 <section class="row">
 
@@ -81,11 +71,9 @@
                     </div>
                 </div>
             </section>
+            <div class="blackOverlay"></div>
         </div>
-
-        <!-- *** End Hero *** -->
-
-        <div class="tan scroll-active" id="solution">
+        <div class="tan fade scroll-active sect" id="solution">
 
             <div class="container row">
 
@@ -94,7 +82,7 @@
 
                 <section class="row rac">
                     <article class="col span_8 fade">
-                        <h1>Solution</h1>
+                        <!--<h1>Solution</h1>-->
                         <div class="rac-intro">
                             <p><span>O</span>ur Agency specializes in working directly with you on early customer acquisition. We work closely with the you and your team to set strategy, create content, and promote it like our hair is on fire!</p>
                             <!--<i class="arrow"></i>-->
@@ -104,30 +92,30 @@
                         <h2>Request a consultation</h2>
                         <form name="RequestConsultation" accept-charset="UTF-8" action="#" method="post">
                             <span class="input input--hoshi">
-                <input class="input__field input__field--hoshi" type="text"/>
-                <label class="input__label input__label--hoshi input__label--hoshi-color-1">
-                  <span class="input__label-content input__label-content--hoshi">Full Name</span>
+              <input class="input__field input__field--hoshi" type="text"/>
+              <label class="input__label input__label--hoshi input__label--hoshi-color-1">
+                <span class="input__label-content input__label-content--hoshi">Full Name</span>
                             </label>
                             </span>
 
                             <span class="input input--hoshi">
-                <input class="input__field input__field--hoshi" type="text"/>
-                <label class="input__label input__label--hoshi input__label--hoshi-color-1">
-                  <span class="input__label-content input__label-content--hoshi">Email</span>
+              <input class="input__field input__field--hoshi" type="text"/>
+              <label class="input__label input__label--hoshi input__label--hoshi-color-1">
+                <span class="input__label-content input__label-content--hoshi">Email</span>
                             </label>
                             </span>
 
                             <span class="input input--hoshi">
-                <input class="input__field input__field--hoshi" type="text"/>
-                <label class="input__label input__label--hoshi input__label--hoshi-color-1">
-                  <span class="input__label-content input__label-content--hoshi">Company</span>
+              <input class="input__field input__field--hoshi" type="text"/>
+              <label class="input__label input__label--hoshi input__label--hoshi-color-1">
+                <span class="input__label-content input__label-content--hoshi">Company</span>
                             </label>
                             </span>
 
                             <span class="input input--hoshi">
-                <input class="input__field input__field--hoshi" type="text"/>
-                <label class="input__label input__label--hoshi input__label--hoshi-color-1">
-                  <span class="input__label-content input__label-content--hoshi">Phone</span>
+              <input class="input__field input__field--hoshi" type="text"/>
+              <label class="input__label input__label--hoshi input__label--hoshi-color-1">
+                <span class="input__label-content input__label-content--hoshi">Phone</span>
                             </label>
                             </span>
                         </form>
@@ -139,205 +127,85 @@
             </div>
         </div>
 
-        <!-- *** End Key Selling Point/"Solution" *** -->
-
-        <!-- *** Begin Fixed CTA *** -->
-
-        <div class="rac_scroll">
-            <div class="container row">
-                <section class="row">
-                    <article class="col span_7">
-                        Ready to blah blah blah? Well click this button.
-                    </article>
-                    <article class="col span_3">
-                        <a href="#solution" class="scroll_button scroll">Request a consultation</a>
-                    </article>
-                    <aside class="col span_2">
-                        <a href="#" class="close">Close</a>
-                    </aside>
-                </section>
-            </div>
-        </div>
-
-        <!-- *** End Fixed CTA *** -->
-
-        <div class="key scroll-active" id="how-we-work">
-            <!-- *** Begin Steps *** -->
-
-            <section class="row steps fade">
-                <article class="col span_12 steps-intro">
-                    <h1>How we work</h1>
-                    <p>There is no magic bullet. Like building a startup, the magic is in the consistent execution. That's what we're all about.</p>
+        <div class="key fade scroll-active sect" id="how-we-work">
+            <section class="row steps steps-intro fade">
+                <article class="col span_12">
+                    <div class="clip-text clip-text_one">How we work</div>
+                    <h2 class="how">There is no magic bullet. Like building a startup, the magic is in the consistent execution. That's what we're all about.</h2>
                 </article>
-                <!--<div class="tabs tabs-style-underline">
-                <nav>
-                    <ul>
-                        <li><a href="#section-underline-1"><span>Strategy</span></a>
-                        </li>
-                        <li><a href="#section-underline-2"><span>Create</span></a>
-                        </li>
-                        <li><a href="#section-underline-3"><span>Promotion</span></a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="content-wrap">
-                    <section id="section-underline-1">
-                        <div class="row brand-row">
-                            <article class="col span_12 body-text">
-                                <h1>Strategy</h1>
-                                <h2>Find customers who care</h2>
-                            <aside class="col span_4">
-                              <h3>Define your customers</h3>
-                            </aside>
-                            <aside class="col span_4">
-                              <h3>Figure out what excites them most</h3>
-                            </aside>
-                            <aside class="col span_4">
-                              <h3>Pinpoint where they live</h3>
-                            </aside>
-                          </article>
-                        </div>
-                    </section>
-                    <section id="section-underline-2">
-                      <div class="row brand-row">
-                          <article class="col span_12 body-text">
-                              <h1>Creation</h1>
-                              <h2>Write genuinely helpful content</h2>
-                          <aside class="col span_4">
-                            <h3>Brainstorm what problems your customers face</h3>
-                          </aside>
-                          <aside class="col span_4">
-                            <h3>Find a voice that connects with them</h3>
-                          </aside>
-                          <aside class="col span_4">
-                            <h3>Be helpful, be genuine</h3>
-                          </aside>
-                        </article>
-                      </div>
-                    </section>
-                    <section id="section-underline-3">
-                      <div class="row brand-row">
-                          <article class="col span_12 body-text">
-                              <h1>Promotion</h1>
-                              <h2>Leverage every last channel</h2>
-                          <aside class="col span_4">
-                            <h3>Exploit all channels</h3>
-                          </aside>
-                          <aside class="col span_4">
-                            <h3>Target influencers</h3>
-                          </aside>
-                          <aside class="col span_4">
-                            <h3>Be consistent</h3>
-                          </aside>
-                        </article>
-                      </div>
-                    </section>
-                </div>
-            </div>-->
+                <div class="row brand-row">
+                    <article class="col span_4 body-text">
+                        <h2>Strategy</h2>
+                        <hr>
+                        <p>If you’re looking for a grey haired man in a mock turtleneck postulating at a whiteboard, you’ve come to the wrong place. For us, strategy is a playbook, not a buzzword.</p>
+                        <h3>Find customers who care</h3>
+                        <ul>
+                            <li>Define your customer</li>
+                            <li>Lead with your problem</li>
+                            <li>Pinpoint where they live</li>
+                        </ul>
+                    </article>
+                    <article class="col span_4 body-text">
+                        <h2>Creation</h2>
+                        <hr>
+                        <p>Bad content is easy, Good content is really difficult. The key difference is in the value you bring the reader.</p>
+                        <h3>Write genuinely helpful content</h3>
+                        <ul>
+                            <li>Brainstorm what problems your customers face</li>
+                            <li>Find a voice that connects with them</li>
+                            <li>Be helpful, be genuine</li>
+                        </ul>
+                    </article>
+                    <article class="col span_4 body-text">
+                        <h2>Promotion</h2>
+                        <hr>
+                        <p>Or “voodoo” as most people think. The reality is, promotion is just a ton of work. The concept is simple: find lots, and lots of important channels to share your content.</p>
+                        <h3>Leverage every last channel</h3>
+                        <ul>
+                            <li>Exploit all channels</li>
+                            <li>Target influencers</li>
+                            <li>Be consistent</li>
+                        </ul>
+                    </article>
             </section>
+            </div>
+            <div class="blackOverlay"></div>
         </div>
-        <!-- *** End Steps *** -->
 
-
-
-
-        <!-- *** Begin Why Us *** -->
-        <div class="black scroll-active" id="why-us">
+        <div class="black fade scroll-active sect" id="why-us">
             <div class="container row">
                 <section class="row why-us">
-                    <article class="col span_12 fade">
+                    <article class="col span_12">
                         <h1>Why us?</h1>
-                        <p>We're not an agency. We're Founders like you. We're the world's largest startup platform with one mission - help startups take off.</p>
-                        <p>If you just want a marketing agency, we're not a fit. If you want to team up with people that build startups all day long, we're you're people.</p>
-                        <p>We're here to get you accelerated so you can build more resources to grow your business without us.</p>
+                        <aside class="col span_4 top-left fade">
+                            <p>We live the problem. We’re Founders like you. When we aren’t helping startups acquire users, we are using the same tactics to acquire users of our own. </p>
+                        </aside>
+                        <aside class="col span_8 top-right fade">
+                            <p>We recognize value for a startup is different than value for a big corporation. We want our clients to not only walk away with new users and great content, but also the knowledge of how to repeat it on their own.</p>
+                        </aside>
+                        <aside class="col span_4 bottom-left fade">
+                            <p>We are crazy passionate about startups. So much so that we built our entire brand around helping startups launch!</p>
+                        </aside>
+                        <aside class="col span_4 bottom-right fade">
+                            <p>We are crazy passionate about startups. So much so that we built our entire brand around helping startups launch!</p>
+                        </aside>
                     </article>
                 </section>
             </div>
         </div>
-        <!-- *** End Why Us *** -->
 
-
-        <!-- *** Begin 5 Reasons *** -->
-
-        <div class="white scroll-active" id="five-reasons">
-            <div class="row">
+        <div class="green fade scroll-active sect" id="case-study">
+            <div class="container row">
                 <section class="row reasons">
-                    <article class="col span_12 fade">
-                        <h1>Five reasons we're your people</h1>
+                    <article class="col span_12">
+                        <h1>Startups.co Case Study</h1>
                     </article>
-
-
-                    <!--<div class="reason-row">
-          <article class="col span_6 left-text fade">
-            <aside class="number">
-              01
-            </aside>
-            <h2>We're all seasoned Founders ourselves.</h2>
-              <p class="list--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis felis libero. Vestibulum vel justo a elit consequat facilisis. Sed dolor odio, fringilla at ornare et, imperdiet non magna. In aliquet vestibulum nisi, eget pellentesque mauris consequat tincidunt. Phasellus tincidunt efficitur leo, vel iaculis enim lobortis quis.</p>
-          </article>
-          <article class="col span_6 right-img fade"></article>
-        </div>
-
-        <div class="reason-row">
-          <article class="col span_6 left-img fade"></article>
-          <article class="col span_6 right-text fade">
-            <aside class="number">
-              02
-            </aside>
-            <h2>Startups.co has over 1 million startups on our platform who we help find new customers, funding and mentorship.</h2>
-            <p class="list--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis felis libero. Vestibulum vel justo a elit consequat facilisis. Sed dolor odio, fringilla at ornare et, imperdiet non magna. In aliquet vestibulum nisi, eget pellentesque mauris consequat tincidunt. Phasellus tincidunt efficitur leo, vel iaculis enim lobortis quis.</p>
-        </article>
-        </div>
-
-
-        <div class="reason-row">
-        <article class="col span_6 left-text fade">
-          <aside class="number">
-            03
-          </aside>
-          <h2>We think about startup growth like you do because we're building a company as aggressively as you are.</h2>
-            <p class="list--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis felis libero. Vestibulum vel justo a elit consequat facilisis. Sed dolor odio, fringilla at ornare et, imperdiet non magna. In aliquet vestibulum nisi, eget pellentesque mauris consequat tincidunt. Phasellus tincidunt efficitur leo, vel iaculis enim lobortis quis.</p>
-        </article>
-        <article class="col span_6 right-img fade"></article>
-      </div>
-
-      <div class="reason-row">
-        <article class="col span_6 left-img fade"></article>
-        <article class="col span_6 right-text fade">
-          <aside class="number">
-            04
-          </aside>
-          <h2>We talk to thousands of growing startups who help us understand what's working and what's not - it keeps us incredibly fresh and relevant.</h2>
-          <p class="list--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis felis libero. Vestibulum vel justo a elit consequat facilisis. Sed dolor odio, fringilla at ornare et, imperdiet non magna. In aliquet vestibulum nisi, eget pellentesque mauris consequat tincidunt. Phasellus tincidunt efficitur leo, vel iaculis enim lobortis quis.</p>
-      </article>
-      </div>
-
-      <div class="reason-row">
-      <article class="col span_6 left-text fade">
-        <aside class="number">
-          05
-        </aside>
-        <h2>We're priced and structured for working with Founders and startup budgets, not big companies where the dollars are just a number.</h2>
-          <p class="list--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quis felis libero. Vestibulum vel justo a elit consequat facilisis. Sed dolor odio, fringilla at ornare et, imperdiet non magna. In aliquet vestibulum nisi, eget pellentesque mauris consequat tincidunt. Phasellus tincidunt efficitur leo, vel iaculis enim lobortis quis.</p>
-      </article>
-      <article class="col span_6 right-img fade"></article>
-    </div>-->
-
                 </section>
             </div>
         </div>
-        <!-- *** End 5 Reasons *** -->
-
-
-
-
-        <!-- *** Begin Testimonials *** -->
-
-
-        <!-- *** End Testimonials *** -->
-
 
     </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="js/main.js"></script>

@@ -1,17 +1,79 @@
-$(function() {
-    var header = $(".fixed-nav");
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
+$("button#light").click(function() {
+    $("link[rel=stylesheet]").attr({
+        href: "css/style2.css"
+    });
+});
 
-        if (scroll >= 700) {
-            nav.removeClass('vis-no').addClass("vis-yes");
-        } else {
-            nav.removeClass("vis-yes").addClass('vis-no');
+$("button#dark").click(function() {
+    $("link[rel=stylesheet]").attr({
+        href: "css/style.css"
+    });
+});
+
+/* change right CTA color based on left tab color */
+
+$(window).scroll(function() {
+    $('.sect').each(function() {
+        var w = $(window).scrollTop();
+        var t = $(this).offset().top - 400;
+        if (w > t) {
+            $('.fixed-nav-right').css({
+                "background-color": $(this).css('background-color')
+            });
         }
     });
 });
 
+/* animated svg icons w/ vivus.js */
 
+jQuery(function() {
+    // Define your callback
+    var myCallback = function() {};
+
+    // Get your HTMLCollection of SVG to animate
+    var myElements = document.getElementsByClassName("icon-vivus");
+
+    // Go across them to create a Vivus instance
+    // with each of them
+    for (var i = myElements.length - 1; i >= 0; i--) {
+        new Vivus(myElements[i], {
+            duration: 50,
+            type: 'async'
+        }, myCallback);
+    }
+});
+
+/* black overlay on scroll */
+
+$(function() {
+    $(window).scroll(function() {
+        var currentScrollTop = $(window).scrollTop();
+        $('.blackOverlay').css('opacity', currentScrollTop / $('.blackOverlay').height());
+
+    });
+});
+
+/* hide left nav on page load */
+
+
+$(window).scroll(function() { // when the page is scrolled run this
+    if ($(this).scrollTop() != 0) { // if you're NOT at the top
+        $('.fixed-nav').fadeIn("fast"); // fade in
+    } else { // else
+        $('.fixed-nav').fadeOut("fast"); // fade out
+    }
+});
+
+$(window).scroll(function() { // when the page is scrolled run this
+    if ($(this).scrollTop() != 0) { // if you're NOT at the top
+        $('.fixed-nav-right').fadeIn("fast"); // fade in
+    } else { // else
+        $('.fixed-nav-right').fadeOut("fast"); // fade out
+    }
+});
+
+
+/* Left Nav */
 
 var sections = $('.scroll-active'),
     nav = $('nav'),
@@ -21,7 +83,7 @@ $(window).on('scroll', function() {
     var cur_pos = $(this).scrollTop();
 
     sections.each(function() {
-        var top = $(this).offset().top
+        var top = $(this).offset().top - 400;
         bottom = top + $(this).outerHeight();
 
         if (cur_pos >= top && cur_pos <= bottom) {
