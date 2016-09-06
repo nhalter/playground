@@ -15,10 +15,10 @@ $("button#dark").click(function() {
 $(window).scroll(function() {
     $('.sect').each(function() {
         var w = $(window).scrollTop();
-        var t = $(this).offset().top - 400;
+        var t = $(this).offset().top - 900;
         if (w > t) {
             $('.fixed-nav-right').css({
-                "background-color": $(this).css('background-color')
+                "background-color": $('.fixed-nav a.active').css('background-color')
             });
         }
     });

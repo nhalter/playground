@@ -15,7 +15,7 @@
 }
 
 body {
-    background-color: #F7F6F1;
+    background-color: #fff;
 }
 
 a {
@@ -333,6 +333,7 @@ body:after {
 
 #problem {
   background-color: #E5F4FB;
+  border-bottom: none;
 }
 
 #solution {
@@ -340,11 +341,11 @@ body:after {
 }
 
 #how-we-work {
-    background-color: #B29D84;
+    background-color: #fff;
 }
 
 #why-us {
-    background-color: #F7F6F1;
+    background-color: #fff;
 }
 
 #case-study {
@@ -983,6 +984,13 @@ button:hover {
 
 /***** How We Work *****/
 
+.kendall {
+  float: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .brand-row {
     max-width: 1170px;
     margin: auto;
@@ -1086,7 +1094,7 @@ button:hover {
 .steps-intro {
     margin-left: auto;
     margin-right: auto;
-    background-color: #fff;
+    background-color:#F7F6F1;
     color: #fff;
     height: 100%;
 }
@@ -1113,7 +1121,7 @@ button:hover {
 }
 
 h2.how {
-    text-align: center;
+    text-align: left;
     font-weight: normal;
     padding-bottom: 40px;
     font-size: 1.6em;
@@ -1123,7 +1131,6 @@ h2.how {
     text-decoration: none;
     font-family: georgia, serif;
     font-size: 1.8em;
-    width: 40%;
     font-weight: normal;
     text-transform: none;
     letter-spacing: normal;
@@ -1135,56 +1142,16 @@ h2.how {
 .clip-text {
   font-family: proxima-nova;
   font-weight: 800;
-  font-size: 11.4em;
-  z-index: -1;
-  color: rgba(0, 0, 0, 0.08);
-  letter-spacing: -12px;
+  font-size: 10em;
+  z-index:2;
+  line-height: 120px;
+  color: rgba(0, 0, 0, 1);
+  letter-spacing: -8px;
   position: relative;
-  margin: .25em 0 0 0;
-  text-align: center;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin: 1em 0 20px 0;
+  text-align: left;
 }
 
-
-.clip-text:before,
-.clip-text:after {
-    position: absolute;
-    content: '';
-}
-
-/* Background */
-.clip-text:before {
-    z-index: -2;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-
-
-
-/* Change the background position to display letter when the black zone isn't here */
-.clip-text--no-textzone:before {
-    background-position: -.65em 0;
-}
-
-.clip-text--no-textzone:after {
-    content: none;
-}
-
-/* Use Background-size cover for photo background and no-repeat background */
-.clip-text--cover,
-.clip-text--cover:before {
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-            background-size: cover;
-}
-
-/* Background image from http://thepatternlibrary.com/ and http://lorempixel.com */
-.clip-text_one {
-    background-image: url(../img/wov.png);
-}
 
 /***** Why Us *****/
 
@@ -1207,7 +1174,7 @@ h2.how {
     font-weight: 800;
     font-size: 1.3em;
     z-index: 1;
-    color: rgba(0, 0, 0, 1);
+    color: #1D181F;
     letter-spacing: 6px;
     padding-bottom: 40px;
     text-align: center;
