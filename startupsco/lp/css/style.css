@@ -68,18 +68,18 @@ canvas {
 
 /* Create a series of empty pseudo-elements... */
 
-html:before, html:after, body:before, body:after {
+/*html:before, html:after, body:before, body:after {
     content: "";
-    background-color: #F7F6F1;
+    background-color: #000;
     position: fixed;
     display: block;
     z-index: 5;
-}
+}*/
 
 
 /* ...and position them! */
 
-html:before {
+/*html:before {
     height: 20px;
     left: 0;
     right: 0;
@@ -105,15 +105,14 @@ body:after {
     top: 0;
     bottom: 0;
     left: 0;
-}
+}*/
+
 
 /***** Logo *****/
 
 .logo {
     display: block;
     padding-top: 40px;
-    margin-top: -30px;
-    position: fixed;
     padding-left: 46%;
 }
 
@@ -136,7 +135,6 @@ body:after {
     width: 100%;
     height: 100%;
     z-index: 0;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .tan:after {
@@ -149,7 +147,6 @@ body:after {
     height: 100%;
     z-index: -1;
     opacity: 1;
-    background-image: url('../img/adventure.jpg');
     background-repeat: no-repeat;
     background-position: 0 50%;
     -ms-background-size: cover;
@@ -157,7 +154,6 @@ body:after {
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
-    box-shadow: inset 0px -20px 72px -20px rgba(0, 0, 0, 0.75);
 }
 
 .white {
@@ -198,7 +194,6 @@ body:after {
 
 .hero-full {
     max-width: 100vw;
-    background: rgb(229, 244, 251);
 }
 
 .hero-full:before {
@@ -210,7 +205,6 @@ body:after {
     width: 100%;
     height: 100%;
     z-index: 1;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .hero-full:after {
@@ -223,7 +217,6 @@ body:after {
     height: 100%;
     z-index: -1;
     opacity: 1;
-    background-image: url('../img/user.jpg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -ms-background-size: cover;
@@ -231,11 +224,10 @@ body:after {
     -moz-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
-    box-shadow: inset 0px -20px 72px -20px rgba(0, 0, 0, 0.75);
 }
 
 .blackOverlay {
-    background-color: #F7F6F1;
+    background-color: #000;
     opacity: 0.0;
     position: absolute;
     top: 0;
@@ -260,6 +252,7 @@ body:after {
     width: 5em;
     display: none;
     top: 15%;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
 }
 
 .fixed-nav span {
@@ -314,9 +307,6 @@ body:after {
 
 .fixed-nav ul {
     height: 100%;
-    outline-width: 20px;
-    outline-color: #F7F6F1;
-    outline-style: solid;
 }
 
 .fixed-nav li {}
@@ -342,11 +332,11 @@ body:after {
 }
 
 #problem {
-    background-color: transparent;
+  background-color: #E5F4FB;
 }
 
 #solution {
-    background-color: #1D181F;
+    background-color: ;
 }
 
 #how-we-work {
@@ -354,11 +344,11 @@ body:after {
 }
 
 #why-us {
-    background-color: #3A424C;
+    background-color: #F7F6F1;
 }
 
 #case-study {
-    background-color: #2C6E73;
+    background-color: #fff;
 }
 
 
@@ -382,9 +372,7 @@ body:after {
     transition: ease-in 0.3s;
     right: 0;
     display: none;
-    outline-width: 20px;
-    outline-color: #F7F6F1;
-    outline-style: solid;
+
 }
 
 .fixed-nav-right a {
@@ -461,7 +449,7 @@ body:after {
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    top: 50%;
+    top: 40%;
     transform: translateY(-50%) !important;
 }
 
@@ -486,7 +474,7 @@ body:after {
     font-weight: 300;
     text-align: center;
     font-size: 7.2em;
-    color: rgb(255, 255, 255);
+    color: rgb(0,0,0);
 }
 
 @keyframes fadeIn {
@@ -529,7 +517,7 @@ body:after {
 
 .icon-scroll {
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 50%;
     margin-left: -8px;
     width: 16px;
@@ -543,8 +531,8 @@ body:after {
     display: block;
     width: 5px;
     height: 5px;
-    border-right: 1px solid rgba(255, 255, 255, .8);
-    border-bottom: 1px solid rgba(255, 255, 255, .8);
+    border-right: 1px solid rgba(0, 0, 0, .8);
+    border-bottom: 1px solid rgba(0, 0, 0, .8);
     margin: 0 0 2px 4px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -578,7 +566,7 @@ body:after {
 .icon-scroll .mouse {
     height: 22px;
     width: 14px;
-    border: 1px solid rgba(255, 255, 255, .8);
+    border: 1px solid rgba(0, 0, 0, .8);
     border-radius: 10px;
 }
 
@@ -588,7 +576,7 @@ body:after {
     height: 3px;
     width: 3px;
     margin: 2px auto 0;
-    background: rgba(255, 255, 255, .8);
+    background: rgba(0, 0, 0, .8);
     -webkit-animation: mouse-wheel 1.2s ease infinite;
     -moz-animation: mouse-wheel 1.2s ease infinite;
     animation: mouse-wheel 1.2s ease infinite;
@@ -758,7 +746,7 @@ i.arrow:before {
 .rac p {
   font-family: Georgia;
   font-size: 29px;
-  color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 0.5);
   width: 75%;
   z-index: 1;
   position: relative;
@@ -775,7 +763,7 @@ i.arrow:before {
   padding: 16px;
   background-color: rgb(255, 86, 41);
   margin-right: 14px;
-  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 0px 20px 5px rgba(0, 0, 0, 0.09);
 }
 
 .rac h3 {
@@ -1056,7 +1044,6 @@ button:hover {
 }
 
 .steps ul {
-  margin-left: 20%;
 }
 
 .steps ul li {
@@ -1065,7 +1052,8 @@ button:hover {
   color: rgba(0, 0, 0, 0.5);
   font-size: 1em;
   padding: 15px;
-  list-style: initial;
+  list-style: none;
+  text-align: center;
 }
 
 .steps p {
@@ -1147,7 +1135,7 @@ h2.how {
 .clip-text {
   font-family: proxima-nova;
   font-weight: 800;
-  font-size: 14.4em;
+  font-size: 11.4em;
   z-index: -1;
   color: rgba(0, 0, 0, 0.08);
   letter-spacing: -12px;
@@ -1219,7 +1207,7 @@ h2.how {
     font-weight: 800;
     font-size: 1.3em;
     z-index: 1;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
     letter-spacing: 6px;
     padding-bottom: 40px;
     text-align: center;
@@ -1403,23 +1391,21 @@ h2.how {
 .reasons {
     padding-bottom: 100px;
     display: block;
-    background-color: #2C6E73;
     margin: 0 auto;
-    padding-top: 80px;
+    padding-top: 10%;
     height: 100vh;
 }
 
 .reasons h1 {
-    font-family: proxima-nova;
-    font-weight: 700;
-    font-size: 3.6em;
-    z-index: 1;
-    color: rgba(255, 255, 255, 1);
-    letter-spacing: -3px;
-    padding-bottom: 40px;
-    line-height: 64px;
-    text-align: center;
-    padding-top: 80px;
+  font-family: proxima-nova;
+  font-weight: 800;
+  font-size: 1.3em;
+  z-index: 1;
+  color: #000;
+  letter-spacing: 6px;
+  padding-bottom: 40px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .reasons h1:after {
@@ -1496,7 +1482,7 @@ h2.how {
 .cta {
     padding: 30px;
     background-color: white;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.09);
 }
 
 .cta h1 {
