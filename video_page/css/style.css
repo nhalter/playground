@@ -599,6 +599,7 @@ label.error {
 
 .sco-footer a {
 	display: block;
+	height: 30px;
 }
 
 .sco-footer ul {
@@ -627,6 +628,11 @@ label.error {
 	width: 50%;
 	margin: 0 auto;
 	display: table;
+	padding-top: 5px;
+}
+
+.sco-logo-img {
+	padding-top: 0px !important;
 }
 
 .footer-intro {
