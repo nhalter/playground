@@ -10,18 +10,19 @@ $("button#dark").click(function() {
     });
 });
 
+
 /* change right CTA color based on left tab color */
 
-$(window).scroll(function() {
-    $('.sect').each(function() {
-        var w = $(window).scrollTop();
-        var t = $(this).offset().top - 900;
-        if (w > t) {
-            $('.fixed-nav-right').css({
-                "background-color": $('.fixed-nav a.active').css('background-color')
-            });
-        }
-    });
+
+
+$(document).scroll(function () {
+    var y = $(this).scrollTop();
+    if (y > 1000) {
+        $('.fixed-nav').fadeIn();
+    } else {
+        $('.fixed-nav').fadeOut();
+    }
+
 });
 
 /* animated svg icons w/ vivus.js */
@@ -52,25 +53,6 @@ $(function() {
 
     });
 });
-
-/* hide left nav on page load */
-
-
-$(window).scroll(function() { // when the page is scrolled run this
-    if ($(this).scrollTop() != 0) { // if you're NOT at the top
-        $('.fixed-nav').fadeIn("fast"); // fade in
-    } else { // else
-        $('.fixed-nav').fadeOut("fast"); // fade out
-    }
-});
-
-/*$(window).scroll(function() { // when the page is scrolled run this
-    if ($(this).scrollTop() != 0) { // if you're NOT at the top
-        $('.fixed-nav-right').fadeIn("fast"); // fade in
-    } else { // else
-        $('.fixed-nav-right').fadeOut("fast"); // fade out
-    }
-});*/
 
 
 /* Left Nav */
@@ -108,55 +90,8 @@ nav.find('a').on('click', function() {
 });
 
 
-/* cta bar
-
-function update() {
-    if ($(window).scrollTop() > 1200) {
-        $('.rac_scroll').animate({
-            "bottom": '0px'
-        }, 300);
-    } else {
-        $('.rac_scroll').animate({
-            "bottom": '-90px'
-        }, 300);
-    }
-}
-
-$(function() {
-    $('.rac_scroll').click(function() {
-        $(this).hide(400);
-        return false;
-     });
- });
-
-setInterval(update, 500); end cta bar */
-
-/*$(function() {
-  $('a.scroll[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 600);
-        return false;
-      }
-    }
-  });
-});*/
-
 var main = function() {
 
-    /*var elementPosition = $('nav').offset();
-
-      $(window).scroll(function () {
-          if ($(window).scrollTop() > elementPosition.top) {
-              $('nav').css('position', 'fixed').css('top', '0');
-          } else {
-              $('nav').css('position', 'static');
-          }
-       });
 
       /* scroll reveal */
     window.sr = ScrollReveal();

@@ -114,8 +114,8 @@ body:after {
 
 .logo {
     display: block;
-    padding-top: 40px;
-    padding-left: 46%;
+    padding-top: 80px;
+    margin: 0 auto;
 }
 
 .logo-z {
@@ -128,6 +128,7 @@ body:after {
 
 .tan {
     width: 100vh;
+    background:#F7F6F1;
 }
 
 .tan:before {
@@ -221,7 +222,7 @@ body:after {
     height: 100%;
     z-index: -1;
     opacity: 1;
-    background: url(../img/2250.jpg);
+    background: url(../img/cover.jpg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     -ms-background-size: cover;
@@ -253,12 +254,13 @@ body:after {
     position: fixed;
     z-index: 9999;
     color: #fff;
-    background-color: #1D181F;
+    background-color: #FF5629;
     display: none;
     bottom: 0;
     box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 20%;
     height: 60px;
+    right:0;
 }
 
 .fixed-nav span {
@@ -340,8 +342,7 @@ body:after {
 }
 
 .cta-a {
-    background-color: #1D181F;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: #FF5629;
     float: right;
     color: #fff !important;
     font-weight: 700;
@@ -364,9 +365,12 @@ body:after {
     border-bottom: none;
 }
 
-#solution {
-    /*background-image: linear-gradient(0deg, #F7F6F1 22%, #FFFFFF 100%);*/
-    background:#fff;
+#solution-form {
+  background: #E8E6DC;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
 }
 
 #solution figure {
@@ -379,11 +383,13 @@ body:after {
 }
 
 #how-we-work {
-    background-image: linear-gradient(-180deg, #F7F6F1 0%, #E5F4FB 100%);
+  background: #E5F4FB;
 }
 
 #why-us {
-    background-color: #fff;
+  background: url(../img/why-bg.png) no-repeat;
+  background-size: cover;
+  background-color: #31363E;
 }
 
 #case-study {
@@ -508,11 +514,13 @@ body:after {
 }
 
 .hero h1 {
-    font-family: proxima-nova;
-    font-weight: 700;
-    text-align: center;
-    font-size: 5em;
-    color: rgb(0, 0, 0);
+  font-family: proxima-nova;
+  font-weight: 800;
+  text-align: center;
+  font-size: 104px;
+  color: #FFFFFF;
+  letter-spacing: -2.27px;
+  line-height: 92px;
 }
 
 @keyframes fadeIn {
@@ -698,9 +706,7 @@ body:after {
 /***** request a consultation *****/
 
 .rac-intro {
-    background-color: rgb(29, 24, 31);
-    padding: 40px 0 40px 0;
-    margin-top: 45%;
+
 }
 
 .rac {
@@ -710,14 +716,12 @@ body:after {
 }
 
 .rac h1 {
-    font-family: proxima-nova;
-    font-weight: 700;
-    font-size: 12.4em;
-    z-index: -1;
-    color: rgba(255, 255, 255, 0.22);
-    letter-spacing: -12px;
-    position: absolute;
-    margin-top: -100px;
+  font-family: proxima-nova, sans-serif;
+  font-weight:800;
+  font-size: 84px;
+  color: #1D181F;
+  line-height: 72px;
+  padding-bottom: 20px;
 }
 
 .rac h2 {
@@ -781,13 +785,11 @@ i.arrow:before {
 }
 
 .rac p {
-    font-family: Georgia;
-    font-size: 29px;
-    color: rgba(255, 255, 255, 1);
-    width: 75%;
-    z-index: 1;
-    position: relative;
-    padding-left: 60px;
+  font-family: Georgia, serif;
+  font-weight:normal;
+  font-size: 24px;
+  color: #3A424C;
+  width: 80%;
 }
 
 .rac p span {
@@ -1032,18 +1034,21 @@ button:hover {
   position: absolute;
   bottom: 0;
   top: 0;
-  margin-top: -80px;
+  margin-top: -100px;
+  right: 0;
+  margin-right: 10%;
 }
 
 .unyq {
-  padding: 40px;
-  border: 5px solid black;
-  margin-top: 40%;
-  display: block;
-  font-family: proxima-nova, sans-serif;
-  font-size: 1.3em;
-  float: right;
-  width: 15%;
+    padding: 40px;
+    display: block;
+    font-family: proxima-nova, sans-serif;
+    font-size: 1.3em;
+    width:15%;
+    right:0;
+    position: absolute;
+    background: rgba(0,0,0,0.12);
+    color:#000;
 }
 
 .rhone {
@@ -1055,26 +1060,27 @@ button:hover {
     transform: scaleX(-1);
     filter: FlipH;
     -ms-filter: "FlipH";
-    margin-top: 80px;
+    margin-top: 120px;
     margin-left: -80px;
 }
 .rhone-info {
   padding: 40px;
-  border: 5px solid black;
-  margin-top: 85%;
   display: block;
   font-family: proxima-nova, sans-serif;
   font-size: 1.3em;
-  margin-left: 60%;
+  float: left;
+  width:15%;
+  position: absolute;
+  background: rgba(255,255,255,0.12);
+  color:#fff;
 }
 
 .brand-row {
-    max-width: 1170px;
-    margin: auto;
-    margin-top: -40px;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
-    padding-bottom: 20px;
-    margin-bottom:40px;
+  max-width: 1170px;
+  margin: auto;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+  margin-top: 40px;
 }
 
 .body-text {
@@ -1083,12 +1089,14 @@ button:hover {
     margin: 18px;
     width: 30%;
     padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.10);
 }
 
 .steps {
     display: block;
     margin: 0 auto;
-    padding-bottom: 8%;
+    padding-bottom: 5%;
 }
 
 .steps h1 {
@@ -1122,12 +1130,9 @@ button:hover {
 .steps h2 {
     font-family: proxima-nova;
     font-weight: 700;
-    font-size: 1.2em;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    padding-top: 10px;
+    font-size: 30px;
+    color: #1D181F;
+    padding-bottom: 20px;
 }
 
 .steps ul {}
@@ -1139,19 +1144,16 @@ button:hover {
     font-size: 1em;
     padding: 15px;
     list-style: none;
-    text-align: center;
 }
 
 .steps p {
-    font-family: Georgia;
-    font-size: 16px;
-    color: rgba(29, 24, 31, 0.7);
-    letter-spacing: 0px;
-    line-height: 26px;
-    padding-bottom: 20px;
-    padding-top: 10px;
-    width: 100%;
-    text-align: center;
+  font-weight: normal;
+  padding-bottom: 20px;
+  text-align: left;
+  width: 90%;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  color: #3A424C;
 }
 
 .steps h3 {
@@ -1159,7 +1161,6 @@ button:hover {
     font-size: 1.1em;
     color: rgb(0, 0, 0);
     padding: 20px 0 20px 0;
-    text-align: center;
     font-weight: 700;
 }
 
@@ -1203,7 +1204,7 @@ h2.how {
     text-align: left;
     font-weight: normal;
     padding-bottom: 60px;
-    font-size: 2.4em;
+    font-size: 32px;
     line-height: normal;
     color: rgba(0, 0, 0, 0.5);
     margin: 0 auto;
@@ -1230,20 +1231,32 @@ h2.how {
     text-align: center;
 }
 
+.boxed-white {
+    padding: 10px 20px 10px 20px;
+    border: 3px solid rgba(255,255,255, 0.2);
+    font-family: proxima-nova, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+    color: rgba(255,255,255, 1);
+    position: relative;
+    margin: 100px 0 40px 0;
+    display: block;
+    width: 25%;
+    text-align: center;
+}
+
 
 /* Clip text element */
 
 .clip-text {
-    font-family: proxima-nova;
-    font-weight: 800;
-    font-size: 7em;
-    z-index: 2;
-    line-height: 98px;
-    color: rgba(0, 0, 0, 1);
-    letter-spacing: -6px;
-    position: relative;
-    margin: 20px 0 20px 0;
-    text-align: left;
+  font-family: proxima-nova, sans-serif;
+  font-weight:800;
+  font-size: 84px;
+  color: #1D181F;
+  line-height: 72px;
+  padding-bottom: 20px;
 }
 
 
@@ -1255,16 +1268,12 @@ h2.how {
 }
 
 .why h1 {
-  font-family: proxima-nova;
-  font-weight: 900;
-  font-size: 16em;
-  color: rgba(29, 24, 31, 0.07);
-  letter-spacing: -3.35px;
-  text-transform: uppercase;
-  position: absolute;
-  z-index: -1;
-  line-height: 210px;
-  margin-top: -6%;
+  font-family: proxima-nova, sans-serif;
+  font-weight: 800;
+  font-size: 84px;
+  color: #fff;
+  line-height: 72px;
+  padding-bottom: 20px;
 }
 
 .why hr {
@@ -1320,15 +1329,28 @@ h2.how {
 }
 
 .why p {
-    font-family: Georgia;
-    font-size: 16px;
-    color: rgba(29, 24, 31, 0.7);
+    font-family: Georgia, serif;
+    font-size: 23px;
+    color: rgba(255, 255, 255, 0.6);
+    letter-spacing: 0px;
+    line-height: 26px;
+    padding-bottom: 40px;
+    padding-top: 10px;
+    width: 80%;
+}
+
+.why p:last-child {
+}
+
+.why-list {
+    font-family: Georgia, serif;
+    font-size: 23px;
+    color: rgba(255, 255, 255, 1);
     letter-spacing: 0px;
     line-height: 26px;
     padding-bottom: 20px;
     padding-top: 10px;
     width: 100%;
-    text-align: center;
 }
 
 .why h3 {
@@ -1351,36 +1373,11 @@ h2.how {
 }
 
 .why-intro {
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #F7F6F1;
-    color: #fff;
-    height: 100%;
-}
 
-.why-intro h1 {
-    font-family: proxima-nova;
-    font-weight: 800;
-    font-size: 14.4em;
-    z-index: -1;
-    color: rgba(0, 0, 0, 0.08);
-    letter-spacing: -12px;
-    position: relative;
-}
-
-.why-intro p {
-    font-weight: normal;
-    padding-bottom: 20px;
-    font-size: 0.9em;
-    line-height: 1.5em;
-    color: rgba(29, 24, 31, 0.7);
-    text-align: center;
-    width: 90%;
-    margin: 0 auto;
 }
 
 .why-us-bg {
-    background: url(../img/1089.jpg) no-repeat;
+    background: url(../img/why-bg.png) no-repeat;
     background-size: cover;
 }
 
@@ -1738,9 +1735,113 @@ h2.how {
 /****************************************************/
 
 @media screen and (max-width: 768px) {
-    .fixed-nav {
-        visibility: hidden;
+  .hero h1 {
+    font-family: proxima-nova;
+    font-weight: 800;
+    text-align: center;
+    font-size: 64px;
+    color: #FFFFFF;
+    letter-spacing: -2px;
+    line-height:62px;
+  }
+  .container {
+    padding: 30px;
+  }
+  .boxed,
+  .boxed-white {
+    width: 40%;
+    margin: 20px 0 40px 0;
+  }
+  .rac h1 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    color: #1D181F;
+    line-height: 62px;
+    padding-bottom: 20px;
+    width: 90%;
+  }
+  .rac h2 {
+    margin-top: 50px;
+    padding-top: 50px;
+  }
+  .clip-text {
+      font-family: proxima-nova, sans-serif;
+      font-weight: 800;
+      font-size: 64px;
+      color: #1D181F;
+      line-height: 62px;
+      padding-bottom: 20px;
+      width: 90%;
     }
+    .body-text {
+      margin: 0%;
+      width: 100%;
+      border-bottom: 1px solid #eee;
+    }
+  .fundable {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    margin-top: 0;
+    right: 0;
+    margin-right: -30%;
+    z-index: -1;
+    opacity: 0.3;
+  }
+  .cta {
+    padding: 0;
+    margin-top: 15%;
+  }
+  h2.how {
+    font-size: 26px;
+  }
+  .steps {
+    padding-top: 20%;
+    padding-bottom:0;
+  }
+  .brand-row {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+  .unyq {
+    display: none;
+  }
+  .logo {
+    display: block;
+    padding-top: 40px;
+    margin: 0 auto;
+  }
+  #solution-form {
+    background: #E8E6DC;
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+  }
+  .rhone-info {
+    display:none;
+  }
+  .rhone {
+display:none;
+  }
+  .fixed-nav {
+    width:100%;
+  }
+  .why h1 {
+    font-family: proxima-nova, sans-serif;
+    font-weight: 800;
+    font-size: 64px;
+    color: #fff;
+    line-height: 62px;
+    padding-bottom: 20px;
+    width: 90%;
+  }
+  .why p {
+    padding-bottom: 30px;
+    width: 100%;
+  }
+  .why p:last-child {
+      padding-bottom: 60px;
+  }
 }
-
-@media screen and (max-width: 480px) {}
